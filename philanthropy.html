@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>PocketAd | Lend a Hand</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53246099-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<!--slider text start-->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
+<!--slider text close-->
+
+<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+ <meta name="description" content="Help make a difference by donating to leading NGOs of the country.">
+<meta name="keywords" content="Donation, charity, CSR, Free recharges, Earn Money, Free money, Free Mobile Recharge, Free Recharge, Free Recharge App">
+
+<style>
+*{outline:none;
+}
+.bottom_nav ul, .bottom_nav:active ul { display: none;position: absolute;}
+body{overflow-x:hidden;overflow-y:hidden;}
+@media (min-device-width : 320px) and (max-device-width:1100px){
+body{overflow-y:auto;overflow-x:hidden;}
+}
+</style>
+
+<script>
+ /* $('body').css({'overflow':'hidden'});
+  $(document).bind('scroll',function () { 
+       window.scrollTo(0,0); 
+  });*/
+  
+  
+function showHideTop(id) {
+    var el = document.getElementById(id);
+    if( el && el.style.display == 'block')  
+		{
+        el.style.display = 'none';
+		$('#menu-icon-top').attr('style','background: url(images/menu-icon.png) center center;background-repeat:no-repeat;');
+		$('#navi2').attr('style','display:none');
+		}
+    else {
+        el.style.display = 'block';
+		$('#menu-icon-top').attr('style','background: url(images/menu-icon-click.png) center center;background-repeat:no-repeat;');
+		$('#navi2').attr('style','display:none');
+		}
+}
+function showHideBottom(id) {
+    var el = document.getElementById(id);
+    if( el && el.style.display == 'block')    
+		{
+        el.style.display = 'none';
+		$('#menu-icon-bottom').attr('style','background: url(images/menu-icon.png) center center;background-repeat:no-repeat;');
+		$('#navi').attr('style','display:none');
+		}
+    else {
+        el.style.display = 'block';
+		$('#menu-icon-bottom').attr('style','background: url(images/menu-icon-click.png) center center;background-repeat:no-repeat;');
+		$('#navi').attr('style','display:none');
+		}
+}
+$(window).scroll(function () { 
+    $('#navi2').attr('style','display:none'); 
+	$('#navi').attr('style','display:none');
+	$('#menu-icon-bottom').attr('style','background: url(images/menu-icon.png) center center;background-repeat:no-repeat;');
+	$('#menu-icon-top').attr('style','background: url(images/menu-icon.png) center center;background-repeat:no-repeat;');
+});
+</script>
+
+
+<script type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  
+    window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0: window.location.reload(); 
+                break; 
+                case 90: window.location.reload(); 
+                break; 
+                case -90: window.location.reload(); 
+                break; } 
+    };
+</script>
+</head>
+
+<body>
+
+<!-- Header Start -->
+<div class="social_header" id="pageheader" style="z-index:1">
+<!-- Nav Start -->
+	<div class="nav">
+		<ul>
+			<li><a href="home.html"><img src="images/pocketad-logo.png" width="33" height="35" alt="pocket ad logo"></a></li>
+			<li><a href="business.html">Business</a></li>
+			<li><a href="partners.html">Partners</a></li>
+            <li class="selected"><a href="philanthropy.html">Philanthropy</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+		</ul>
+	</div><!-- Nav End -->
+</div><!-- Header End -->
+
+<!--Top Responsive Menu Start-->
+	<div class="header_menu header_menu_social" style="background:none;">
+		<div  id="logo_cont">
+        	<div id="logo_menu"><a href="index.html"><img src="images/pocketad-logo.png" alt="pocket ad logo"></a></div>
+        </div>
+        
+		<div class="top_nav">
+			<a href="#" id="menu-icon-top" onclick="showHideTop('navi');"></a>
+			<ul id="navi">
+			<li><a href="http://play.google.com/store/apps/details?id=com.PocketAd.in">Download</a></li>
+			<li><a href="business.html">Business</a></li>
+			<li><a href="partners.html">Partners</a></li>
+			<li><a href="philanthropy.html" class="current-top">Philanthropy</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+<!--Top Responsive Menu End-->
+
+
+<!-- Wrapper Start-->
+<div class="wrapper-social">
+	<!-- Banner Start-->
+    <div class="videobg"></div>
+    
+<video id="videobcg" preload="auto" autoplay loop muted="muted">
+   <source src="video/movie.mp4" type="video/mp4">
+     <source src="video/movie.webm" type="video/webm">
+     <source src="video/movie.ogv" type="video/ogv">
+
+          Sorry, your browser does not support HTML5 video.
+</video>
+   <div id="blackbg" style="background-color:#000000;opacity:0.6;position:absolute;z-index:0">
+   <div id="imagebg">
+   <div class="wrapper">
+        <div id="immersive_slider" style="margin-top: 180px;margin-left:100px;" class="immslider">
+          <div class="slide" >
+            <div class="content content_social">
+              <h2><strong>Bachpan Bachao Andolan</strong></h2>
+              <p>Nobel laureate Kailash Satyarthi-led Bachpan Bachao Andolan (BBA) is India’s largest grassroots movement for the protection of children. BBA has rescued more than 80,000 victims of trafficking, slavery, and child labour and has helped them re-establish promising futures for themselves.</p>
+              <span class="donate"><a href="http://bba.org.in/?q=content/donate" target="_blank">Donate</a></span>
+            </div>
+			</div>
+
+
+          <div class="slide" style="display:none;">
+            <div class="content content_social">
+              <h2><strong>Bachpan Bachao Andolan</strong></h2>
+              <p>Bachpan Bachao Andolan (BBA) symbolizes India’s largest grassroots movement for the protection of children, ensuring their quality education. By 2013, BBA had rescued more than 82800 victims of trafficking, slavery and child labour and has helped them re-establish trust in society and find promising futures for themselves.</p>
+              <span class="donate"><a href="#">Donate</a></span>
+		</div>
+          </div>
+          
+          <div class="slide" style="display:none;">
+            <div class="content content_social">
+              <h2><strong>Bachpan Bachao Andolan</strong></h2>
+              <p>Bachpan Bachao Andolan (BBA) symbolizes India’s largest grassroots movement for the protection of children, ensuring their quality education. By 2013, BBA had rescued more than 82800 victims of trafficking, slavery and child labour and has helped them re-establish trust in society and find promising futures for themselves.</p>
+              <span class="donate"><a href="#">Donate</a></span>
+            </div>
+
+          </div>
+          
+         <!-- <a href="#" class="is-prev"><img src="images/prev.png" width="36" height="109"></a>
+          <a href="#" class="is-next"><img src="images/next.png" width="36" height="109"></a>-->
+        </div>
+  	<div class="benefits">
+  	  <script type="text/javascript">
+  	 /* $(document).ready( function() {
+  	    $("#immersive_slider").immersive_slider({
+  	      container: ".main"
+  	    });
+
+  	  });*/
+
+      </script>
+    </div>
+  </div>
+  
+<!--bottom Responsive Menu Start-->
+	<div class="footer_menu footer_menu_social">
+		<div  id="footer_cont_menu">
+        	<div id="footer_cont_left">
+				<div class="footer-nav">
+					<a href="careers.html" style="color:#fff;">Career</a>
+					<a href="termsofuse.html" style="color:#fff;">Terms</a>
+					<a href="business-login.php" style="color:#fff;">Login</a>
+				</div>
+			</div>
+			<div class="bottom_nav">
+			<a id="menu-icon-bottom"  onclick="showHideBottom('navi2');"></a>
+			<a name="bottom"></a>
+			<ul id="navi2">
+			<li><a href="http://www.facebook.com/PocketAdIndia" target="_blank">Facebook</a></li>
+            <li><a href="http://www.youtube.com/user/PocketAdIndia" target="_blank">Youtube</a></li>
+            <li><a href="http://www.twitter.com/PocketAdIndia" target="_blank">Twitter</a></li>
+			<li><a href="forgot-password.html">Forgot password</a></li>
+			<li><a href="privacypolicy.html">Privacy</a></li>
+			<li><a href="team.html">Team</a></li>
+			</ul>
+		</div>
+		</div>
+			
+
+		
+		<div id="footer_cont_copy">
+			<div class="copyright" style="color:#fff;">2014, YRV Apportunity LLP. All Rights Reserved. </div>
+        </div>
+	</div>
+<!--bottom Responsive Menu End-->
+
+  
+</div>
+</div>
+
+
+<!-- Footer Start -->
+<div class="footer">
+<div class="social_footer">
+  <div class="nav">
+		<ul>
+			<li><a href="business-login.php">Business login</a></li>
+			<li><a href="team.html">Team</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="media.php?filename=PocketAd Media Kit.zip&folder_name=media">Media kit</a></li>
+			<li><a href="forgot-password.html">Forgot password</a></li>
+			<li><a href="privacypolicy.html">Privacy & terms</a></li>
+		</ul>
+   </div><!-- Nav End -->
+        <div class="copy-social">&copy; 2014, YRV Apportunity LLP. All Rights Reserved. </div>
+	</div>
+  
+</div>
+<!-- Footer End -->
+
+</div>
+<script>
+var blackbg=document.getElementById("blackbg");
+var scrwidth=screen.width;
+var scrheight=screen.height;
+blackbg.style.left="0px";
+blackbg.style.top="0px";
+blackbg.style.width=scrwidth+"px";
+blackbg.style.height=scrheight+"px";
+</script>
+
+</body>
+</html>
